@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Project</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Creating a table -->
+
+    <h2><u>Creating a table</u></h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+          <th>Begin</th>
+          <th>End</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td rowspan="2">8:00 a.m.</td>
+          <td rowspan="2">5:00 p.m.</td>
+          <td>Introduction to XML</td>
+        </tr>
+        <tr>
+          <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Tuesday</td>
+          <td>8:00 a.m.</td>
+          <td>11:00 p.m.</td>
+          <td>XPath</td>
+        </tr>
+        <tr>
+          <td>11:00 a.m.</td>
+          <td>2:00 p.m.</td>
+          <td>XSL Transformations</td>
+        </tr>
+        <tr>
+          <td>2:00 p.m.</td>
+          <td>5:00 p.m.</td>
+        </tr>
+        <tr>
+          <td>Wednessday</td>
+          <td>8:00 p.m.</td>
+          <td>12:00 p.m.</td>
+          <td>XSL Formatting Objects</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- creating a form -->
+    <h2><u>Creating a form</u></h2>
+    <form action="#">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name : </label>
+        <input type="text" id="name" />&nbsp;
+        <label for="email">Email : </label>
+        <input type="email" id="email" />&nbsp;
+        <label for="phone">Phone : </label>
+        <input type="tel" id="phone" />&nbsp;
+        <label for="dob">DOB : </label>
+        <input type="date" id="dob" />
+
+        <span>Gender :</span>
+        <input type="radio" name="gender" value="Male" id="male" />
+        <label for="male">Male</label>&nbsp;
+        <input type="radio" name="gender" value="Female" id="female" />
+        <label for="female">Female</label>&nbsp;
+        <input type="radio" name="gender" value="Others" id="others" />
+        <label for="others">Others</label>&nbsp;
+
+        <span>Country :</span>
+        <select name="country" id="country">
+          <option value="United States">United States</option>
+          <option value="Portugal">United States</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Brazil">Brazil</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+
+        <label for="street">Street: </label>
+        <input type="text" name="street" id="street" />
+        <label for="city">City : </label>
+        <input type="text" name="city" id="city" />
+        <label for="state">State :</label>
+        <input type="text" name="state" id="state" />
+        <label for="zip">Zip Code : </label>
+        <input type="text" name="zip" id="zip" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Programming Language</legend>
+        <span>Choose programming languages you are familiar with -> </span>
+        <input type="checkbox" id="java" name="java" value="java" />
+        <label for="java">Java</label>&nbsp;
+        <input type="checkbox" id="python" name="python" value="python" />
+        <label for="python">Python</label>&nbsp;
+        <input
+          type="checkbox"
+          id="javascript"
+          name="javascript"
+          value="javascript"
+        />
+        <label for="javascript">Javascript</label>&nbsp;
+        <input type="checkbox" id="cpp" name="cpp" value="cpp" />
+        <label for="cpp">C++</label>&nbsp;
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Information</legend>
+        <span>Comments</span>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <br />
+        <label for="accept">I agree the terms of the service</label>
+        <input type="checkbox" name="accept" id="accept" value="accept" />
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
